@@ -1,9 +1,0 @@
-File I/O (Input/Output) in C is the process of reading data from a file or writing data to a file using C programming language. This involves opening a file, reading or writing data to it, and then closing the file.
-
-To open a file in C, you can use the `fopen()` function, which takes two arguments: the file path (a string), and the mode (a string indicating the purpose of the file access). The mode can be "r" for reading, "w" for writing (which truncates the file if it already exists), "a" for appending (which adds new data to the end of the file), or "r+" for reading and writing. The `fopen()` function returns a `FILE` pointer, which can be used to refer to the opened file in subsequent I/O operations.
-
-To read data from a file, you can use functions such as `fscanf()`, `fgets()`, or `fread()`, which read data from the file and store it in memory. The `fscanf()` function reads data formatted as specified by a format string, and stores it in variables passed as arguments. The `fgets()` function reads a line of text (up to a specified number of characters or until a newline character is encountered) and stores it in a string. The `fread()` function reads a specified number of bytes from the file and stores them in a buffer.
-
-To write data to a file, you can use functions such as `fprintf()`, `fputs()`, or `fwrite()`, which write data from memory to the file. The `fprintf()` function writes formatted data to the file, based on a format string and variables passed as arguments. The `fputs()` function writes a string to the file. The `fwrite()` function writes a specified number of bytes from a buffer to the file.
-
-After you are done reading from or writing to a file, you should close it using the `fclose()` function. This frees any resources associated with the file and ensures that all data has been written to or read from the file.
